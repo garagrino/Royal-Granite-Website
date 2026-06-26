@@ -6,7 +6,13 @@ body{
   margin:0;
   font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color:#222;
-  background:#f7f7f7;
+  background: linear-gradient(
+        to right,
+        #111111 0%,
+        #1d1d1d 50%,
+        #6d5a28 85%,
+        #d4af37 100%
+    );
   line-height:1.6;
 }
 
@@ -67,8 +73,7 @@ a{
   justify-content:center;
   text-align:center;
   padding:4rem 1.5rem;
-  background:linear-gradient(135deg, #222, #111);
-  color:#fff;
+background: linear-gradient(to right, #111111, rgba(17, 17, 17, 0));  color:#fff;
 }
 
 .hero-copy{
