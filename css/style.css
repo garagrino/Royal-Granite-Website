@@ -137,6 +137,15 @@ a:focus-visible {
   padding-left: .75rem;
 }
 
+.about-showcase {
+  margin-top: 2rem;
+  max-width: 460px;
+}
+
+.about-card {
+  min-height: 280px;
+}
+
 .service-grid {
   display: grid;
   gap: 1.5rem;
