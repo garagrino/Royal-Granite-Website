@@ -26,7 +26,14 @@
       <div class="hero-copy">
         <h2>Premium Granite Solutions</h2>
         <p>Beautiful countertops, staircases, vanities and custom stonework tailored for homes and businesses.</p>
-        <a class="btn" href="https://wa.me/254104629919" target="_blank" rel="noopener noreferrer">Get a Free Quote</a>
+        <a
+          class="btn"
+          href="https://wa.me/254104629919?text=Hello%20Royal%20Granite!%0A%0AI%20would%20like%20to%20request%20a%20quotation."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get a Free Quote
+        </a>
       </div>
     </section>
 
@@ -35,11 +42,11 @@
       <p>Royal Granite supplies and installs premium granite across Kenya. We combine expert craftsmanship with durable materials to deliver elegant stone features that last.</p>
 
       <div class="about-showcase">
-        <article class="service-card about-card">
-          <div class="card-bg" style="background-image: url('./Images/WhatsApp%20Image%202026-06-26%20at%2012.35.51%20PM.jpeg');"></div>
+        <article class="service-card about-card gallery-trigger" role="button" tabindex="0" aria-label="Open project gallery">
+          <div class="card-bg gallery-card-bg" id="featuredCardImage"></div>
           <div class="card-content">
             <h3>Featured Work</h3>
-            <p>Elegant granite finishes crafted for modern interiors, luxury kitchens, and statement spaces.</p>
+            <p>Elegant granite finishes crafted for modern interiors, luxury kitchens, and statement spaces, all done by our very own professional fundis.</p>
           </div>
         </article>
       </div>
@@ -121,8 +128,9 @@
           <p><strong>Location:</strong> Nairobi, Kenya</p>
         </div>
         
-        <form class="contact-form" action="https://formsubmit.co/ronogodrick@gmail.com" method="POST">
+        <form id="contactForm" class="contact-form">
           <input type="hidden" name="_subject" value="New Website Inquiry!">
+          <input type="hidden" name="_captcha" value="false">
           
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
@@ -142,6 +150,17 @@
   <footer class="site-footer">
     <p>© 2026 Royal Granite. Crafted with care in Kenya.</p>
   </footer>
+
+  <div class="gallery-overlay" id="galleryOverlay" aria-hidden="true">
+    <div class="gallery-modal" role="dialog" aria-modal="true" aria-label="Project gallery">
+      <button class="gallery-close" type="button" aria-label="Close gallery">×</button>
+      <button class="gallery-nav gallery-prev" type="button" aria-label="Previous image">❮</button>
+      <div class="gallery-stage">
+        <img id="galleryImage" class="gallery-image" alt="Project gallery image">
+      </div>
+      <button class="gallery-nav gallery-next" type="button" aria-label="Next image">❯</button>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
